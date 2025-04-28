@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+.input-container {
+    display: flex;             /* Flexbox aktivieren */
+    justify-content: center;   /* Inhalt horizontal zentrieren */
+    align-items: center;       /* Inhalt vertikal ausrichten */
+    margin-top: 50px;          /* Abstand nach oben */
+  }
+  input {
+    padding: 10px;
+    width: 300px;
+    font-size: 10px;
+  }
+  button {
+    padding: 10px 20px;
+    margin-left: 10px;          /* Abstand zwischen Input und Button */
+    font-size: 10px;
+  }
