@@ -1,22 +1,110 @@
-h1{
-    text-align: center;
-    letter-spacing: 1px;
-    padding-top: 50px;
-    margin-bottom: 10px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+h1 {
+  margin-top: 40px;
+  color: #333;
+}
+
 .input-container {
-    display: flex;             /* Flexbox aktivieren */
-    justify-content: center;   /* Inhalt horizontal zentrieren */
-    align-items: center;       /* Inhalt vertikal ausrichten */
-    margin-top: 50px;          /* Abstand nach oben */
-  }
-  input {
-    padding: 10px;
-    width: 300px;
-    font-size: 10px;
-  }
-  button {
-    padding: 10px 20px;
-    margin-left: 10px;          /* Abstand zwischen Input und Button */
-    font-size: 10px;
-  }
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+input#neue-aufgabe {
+  padding: 10px 14px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+button#bestaetigen {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button#bestaetigen:hover {
+  background-color: #0056b3;
+}
+
+ul#leer {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 600px;
+}
+
+ul#leer li {
+  background: white;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.aufgaben-text {
+  flex: 1 1 auto;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.button-container {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.button-container button,
+.button-container input[type="checkbox"] {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.button-container button:hover {
+  background-color: #f1f1f1;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+}
+.filter-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-container button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
